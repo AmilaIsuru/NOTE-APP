@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@android:color/white"
+    tools:context=".UpdateNoteActivity">
+
+    <!-- Header Section -->
+    <TextView
+        android:id="@+id/editNoteHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Update Note"
+        android:textSize="28sp"
+        android:textColor="@color/black"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/poppins"/>
+
+    <!-- Container for Edit Fields -->
+    <LinearLayout
+        android:id="@+id/editFieldsContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/editNoteHeading"
+        android:layout_marginTop="24dp">
+
+        <!-- Title Edit Field -->
+        <EditText
+            android:id="@+id/updateTitleEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter updated title"
+            android:textSize="18sp"
+            android:padding="12dp"
+            android:background="@drawable/blue_border"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="@font/poppins"/>
+
+        <!-- Content Edit Field -->
+        <EditText
+            android:id="@+id/updateContentEditText"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:hint="Enter updated description"
+            android:textSize="18sp"
+            android:padding="12dp"
+            android:background="@drawable/blue_border"
+            android:fontFamily="@font/poppins"/>
+
+    </LinearLayout>
+
+
+    <!-- Update Button -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="390dp">
+
+        <EditText
+            android:id="@+id/create_date"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/custom_edittext"
+            android:hint="Select Date"
+            android:padding="15dp"
+            android:textColor="@color/black"
+            android:textColorHint="#BFBBBB" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/updateSaveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Update"
+        android:textSize="20sp"
+        android:textColor="@android:color/black"
+        android:backgroundTint="@color/blue"
+        android:layout_below="@id/editFieldsContainer"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="90dp"
+        android:paddingStart="32dp"
+        android:paddingEnd="32dp"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp"
+        android:fontFamily="@font/poppins"/>
+
+</RelativeLayout>
